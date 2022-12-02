@@ -1,0 +1,305 @@
+html {
+   background: url(travel.jpeg)
+}
+
+
+
+
+div.gallery {
+  border: 3px solid black;
+}
+
+div.gallery:hover {
+  border: 2px solid black;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 60%;
+}
+
+div.desc {
+  padding: 2px;
+  text-align: center;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+.responsive {
+  padding: 10 10px;
+  float: auto;
+  width: 85%;
+    display:inline;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 5px 5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+display: grid;
+grid-template-columns: 5fr fr;
+grid-template-areas: "header header"
+"intro faq"
+"articles faq"
+"footer footer";
+grid-column-gap: 10px;
+}
+
+body {
+   margin-left: auto;
+    margin-right: auto;
+   width: 95%;
+   max-width: 960px;
+   min-width: 640px;
+   background-color: rgb(128, 0, 32);
+   font-family: segoe script; 
+    color:white;
+}
+
+body > header > nav.horizontalNavigation li {
+   width: 20%;
+}
+
+
+
+
+body > header {
+grid-row: 1;
+grid-column: 1/-1;
+}
+
+body > article {grid-area: intro;}
+body > aside {grid-area: faq;}
+body > section {grid-area: articles;}
+body > footer {grid-area: footer;}
+
+
+
+body > header > img {
+   display: block;
+   width: 100%;
+}
+
+
+body > header > nav.horizontalNavigation li {
+   width: 20%;
+}
+
+nav.horizontalNavigation > ul > li {
+   display: block;
+   float: left;
+}
+
+nav.horizontalNavigation a {
+   background-color: black;
+   display: block;
+   font-family:gabriola;
+   font-size: 1.4em;
+   line-height: 1.8em;
+   text-align: center;
+}  
+
+nav.horizontalNavigation a:link, 
+nav.horizontalNavigation a:visited {
+   color: ghostwhite;
+}
+
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+   background-color: green;
+} 
+
+/* Grid Styles for Nested Grid */
+
+h1 {
+   text-indent: 1em;
+}
+
+body > header h1 {
+   font-size: 2.4em;
+   line-height: 2.4em;
+   font-family: Champagne, cursive;
+   letter-spacing: 0.3em;
+   text-align: center;
+   font-weight: normal;
+   color: white;
+}
+
+body > article > h1, body > section > h1, body > aside > h1, body > section > article > h1 {
+   font-family: mv boli;
+   padding: 0.5em 0;
+}
+
+body > article > h1, body > section > h1, body > aside > h1 {
+   font-size: 1.3em;
+   background-color: antiquewhite;
+   color: black;
+}
+
+p {
+   margin: 1em;
+   font-size: 0.9em;
+}
+
+/* Left Column Styles */
+
+img {
+   width: 100%;
+   display: block;
+}
+
+
+
+
+
+section > article > h1 {
+   font-size: 1.1em;
+}
+
+section {
+display: grid;
+grid-template-columns: repeat(1, 2fr);
+}
+
+section > h1 {
+grid-area: 1/1/2/3;
+}
+
+
+
+
+
+
+
+div.formRow {
+display: grid;
+flex-flow: bottom;
+margin: 1px 0px;
+}
+
+div.formRow > * {
+flex: 1 1 150px;
+}
+
+form#survey {
+display: center;
+flex-flow: flex;
+}
+
+form#survey > fieldset {
+background-color: black;
+border-radius: 20px;
+flex: 1 1 300px;
+font-size: 0.85em;
+padding: 10px;
+margin: 10px;
+}
+
+
+
+/* Legend Styles */
+
+
+legend {
+background-color: rgb(179, 20, 25);
+color: white;
+padding: 5px;
+}
+
+
+/* Text Area Styles */
+
+textarea {
+margin-top: 10px;
+height: 100px;
+width: 95%;
+}
+
+
+/* Spinner Styles */
+
+div.formRow > input#dineSpin {
+flex: 0 0 50px;
+}
+
+
+/* Form Button Styles */
+
+div#buttons {
+text-align: center;
+width: 100%;
+}
+
+
+input[type='submit'], input[type='reset'] {
+font-size: 1.2em;
+padding: 5px;
+margin: 15px;
+}
+
+
+/* Validation Styles */
+
+input:focus, select:focus, textarea:focus {
+background-color: coral;
+}
+
+input#name:focus:valid,
+input#zip:focus:valid,
+input#phone:focus:valid,
+input#mail:focus:valid {
+background: coral url(rb_valid.png) bottom
+right/contain no-repeat;
+}
+
+
+
+input#name:focus:invalid,
+input#zip:focus:invalid,
+input#phone:focus:invalid,
+input#mail:focus:invalid {
+background: coral url(rb_invalid.png) bottom
+right/contain no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
