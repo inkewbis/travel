@@ -21,7 +21,10 @@ div.gallery img {
 div.desc {
   padding: 2px;
   text-align: center;
+
 }
+
+
 
 * {
   box-sizing:border-box;
@@ -225,6 +228,7 @@ flex: 1 1 300px;
 font-size: 0.85em;
 padding: 10px;
 margin: 10px;
+
 }
 
 
@@ -234,7 +238,7 @@ margin: 10px;
 
 legend {
 background-color: rgb(179, 20, 25);
-color: white;
+color: ghostwhite;
 padding: 5px;
 }
 
@@ -245,6 +249,9 @@ textarea {
 margin-top: 10px;
 height: 100px;
 width: 95%;
+
+
+    
 }
 
 
@@ -293,7 +300,6 @@ input#mail:focus:invalid {
 background: coral url(rb_invalid.png) bottom
 right/contain no-repeat;
 }
-
 
 
 
